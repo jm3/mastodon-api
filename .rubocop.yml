@@ -1,3 +1,6 @@
+AllCops:
+    NewCops: disable
+
 Layout/AccessModifierIndentation:
   EnforcedStyle: indent
 
@@ -7,7 +10,7 @@ Layout/SpaceInsideHashLiteralBraces:
 Metrics/BlockNesting:
   Max: 2
 
-Metrics/LineLength:
+Layout/LineLength:
   AllowURI: true
   Enabled: false
 
@@ -36,7 +39,10 @@ Style/DoubleNegation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: 'comma'
+
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: 'comma'
 
 Style/RegexpLiteral:
